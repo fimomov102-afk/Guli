@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:linear-gradient(135deg,#090909,#222244,#111);
+}
+
+.container{
+    width:700px;
+    text-align:center;
+    padding:50px;
+    border-radius:25px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    color:white;
+    box-shadow:0 0 35px rgba(255,0,120,.3);
+}
+
+h1{
+    font-size:55px;
+    color:#ff4d6d;
+    margin-bottom:20px;
+    animation:heart 1.5s infinite;
+}
+
+@keyframes heart{
+
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+
+}
+
+h2{
+
+margin-bottom:25px;
+
+}
+
+.question{
+
+font-size:24px;
+line-height:40px;
+
+}
+
+#message{
+
+margin-top:25px;
+height:35px;
+font-size:22px;
+color:#ffd54f;
+
+}
+
+.buttons{
+
+margin-top:45px;
+
+}
+
+button{
+
+padding:16px 38px;
+margin:15px;
+font-size:22px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+#yesBtn{
+
+background:#00c853;
+color:white;
+
+}
+
+#yesBtn:hover{
+
+transform:scale(1.08);
+
+}
+
+#noBtn{
+
+background:#ff1744;
+color:white;
+position:absolute;
+body{
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+    opacity:0;
+    transform:translateY(20px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+}
